@@ -12,7 +12,7 @@ const Show = () => {
   return (
     <div className="show">
       <h1 className="show__title">{showData.name}</h1>
-      <div className="show__info__wrapper">
+      <div className="show__wrapper">
         <section className="show__general">
           <aside className="show__image">
             <img src={showData.image.medium} alt="the powerpuff girls" />
@@ -23,7 +23,7 @@ const Show = () => {
           />
         </section>
         <section className="show__info">
-          <h2>Show Info</h2>
+          <h2 className="show__info__title">Show Info</h2>
           <p>
             <strong>Network:</strong> {showData.status}
           </p>
@@ -48,7 +48,9 @@ const Show = () => {
           </p>
           <p>
             <strong>Official site:</strong>{" "}
-            <a href={showData.officialSite}>www.cartoonnetwork.com</a>
+            <a className="show__info__link" href={showData.officialSite}>
+              www.cartoonnetwork.com
+            </a>
           </p>
         </section>
       </div>

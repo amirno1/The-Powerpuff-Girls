@@ -1,0 +1,30 @@
+@import "./variables";
+
+.episodes {
+  &__table {
+    width: 100%;
+    text-align: center;
+    box-shadow: $boxShadow;
+  }
+  &__head-row {
+    background-color: $greenColor;
+  }
+  &__header-title {
+    padding: 10px 0;
+    color: $textWhite;
+  }
+  &__body {
+    &__row {
+      td {
+        padding: 10px 0;
+      }
+      &:nth-child(even) {
+        background-color: $tableGray;
+      }
+    }
+    &__link {
+      text-decoration: none;
+      color: $greenColor;
+    }
+  }
+}

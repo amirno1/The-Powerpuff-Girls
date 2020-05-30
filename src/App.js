@@ -45,7 +45,11 @@ function App(props) {
       <Navbar />
       <Switch>
         <Route exact path="/shows/:showId/:showName" component={Show} />
-        <Route exact path="/episodes" component={Episodes} />
+        <Route
+          exact
+          path="/shows/:showId/:showName/episodes"
+          component={Episodes}
+        />
         <Route exact path="/episode" component={Episode} />
       </Switch>
     </div>
