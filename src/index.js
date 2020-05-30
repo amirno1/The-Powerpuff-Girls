@@ -1,12 +1,15 @@
 import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
+import Store from "./Store";
 import App from "./App";
 
-// wrapping App inside the BrowserRouter so we can specify the router inside App.js
+// wrapping App with the BrowserRouter so we can specify the routes inside App.js
 const Index = () => (
   <BrowserRouter>
-    <App />
+    <Store>
+      <App />
+    </Store>
   </BrowserRouter>
 );
 
