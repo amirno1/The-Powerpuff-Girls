@@ -1,10 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 
-ReactDOM.render(
-  <React.StrictMode>
+// wrapping App inside the BrowserRouter so we can specify the router inside App.js
+const Index = () => (
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+  </BrowserRouter>
 );
+
+render(<Index />, document.getElementById("root"));
