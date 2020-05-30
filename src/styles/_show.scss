@@ -1,0 +1,19 @@
+.show {
+  &__info__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__general {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+  &__image {
+    margin-right: 15px;
+  }
+  &__summary {
+    p {
+      margin-top: 0;
+    }
+  }
+}
