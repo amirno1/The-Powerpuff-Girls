@@ -67,7 +67,7 @@ const Episodes = () => {
       if (seasons[episode.season - 1]) {
         seasons[episode.season - 1].push(episode);
       } else {
-        seasons[episode.season - 1] = new Array([]);
+        seasons[episode.season - 1] = new Array();
         seasons[episode.season - 1].push(episode);
       }
     });

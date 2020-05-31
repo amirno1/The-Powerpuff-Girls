@@ -50,7 +50,11 @@ function App(props) {
           path="/shows/:showId/:showName/episodes"
           component={Episodes}
         />
-        <Route exact path="/episode" component={Episode} />
+        <Route
+          exact
+          path="/shows/:showId/:showName/episodes/:episodeId"
+          component={Episode}
+        />
       </Switch>
     </div>
   );

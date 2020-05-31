@@ -5,3 +5,37 @@ $navBarTab: #3f3f3f;
 $backgroundGray: #f7f7f7;
 $tableGray: #ebebeb;
 $boxShadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
+
+@mixin infoPage {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__general {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-right: 15px;
+  }
+  &__image {
+    margin-right: 15px;
+  }
+  &__summary {
+    p {
+      margin-top: 0;
+    }
+  }
+  &__info {
+    background-color: $backgroundGray;
+    padding: 10px;
+    box-shadow: $boxShadow;
+    line-height: 1.3;
+    &__title {
+      margin: 0;
+    }
+    &__link {
+      text-decoration: none;
+      color: $greenColor;
+    }
+  }
+}
