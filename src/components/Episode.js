@@ -21,7 +21,6 @@ const Episode = () => {
     if (episodes.state === "initial") {
       fetchEpisodes();
     }
-    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (episodes.state === "initial") {

@@ -27,4 +27,7 @@
       color: $greenColor;
     }
   }
+  @include responsive(phone) {
+    font-size: 10px;
+  }
 }

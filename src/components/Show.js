@@ -25,7 +25,8 @@ const Show = () => {
         <section className="show__info">
           <h2 className="show__info__title">Show Info</h2>
           <p>
-            <strong>Network:</strong> {showData.status}
+            <strong>Network:</strong> {showData.network.name}{" "}
+            {showData.network.country.name}
           </p>
           <p>
             <strong>Schedule:</strong> {showData.schedule.days.map(day => day)}{" "}

@@ -1,3 +1,4 @@
+@import "./mediaQueries";
 $greenColor: #3c948b;
 $textWhite: #fff;
 $textGray: #999;
@@ -10,15 +11,46 @@ $boxShadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    @include responsive(phone) {
+      flex-direction: column;
+    }
+    @include responsive(tab) {
+      flex-direction: column;
+    }
+    @include responsive(lap-desk) {
+      flex-direction: row;
+    }
   }
   &__general {
     display: flex;
     justify-content: space-between;
     width: 70%;
     margin-right: 15px;
+    @include responsive(phone) {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 0 15px 0;
+    }
+    @include responsive(tab) {
+      width: 100%;
+      margin: 0 0 15px 0;
+    }
+    @include responsive(lap-desk) {
+      width: 70%;
+      margin-right: 15px;
+    }
   }
   &__image {
     margin-right: 15px;
+    img {
+      @include responsive(phone) {
+        width: 100%;
+      }
+    }
+    @include responsive(phone) {
+      margin: 0 0 15px 0;
+      width: 100%;
+    }
   }
   &__summary {
     p {

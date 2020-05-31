@@ -33,7 +33,6 @@ function App(props) {
     if (show.state === "initial") {
       fetchShow();
     }
-    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Simulate loading when the data is fetching

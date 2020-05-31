@@ -2,9 +2,19 @@
 @import "./styles/navbar";
 @import "./styles/episodes";
 @import "./styles/episode";
+@import "./styles/mediaQueries";
 
 .App {
   width: 1024px;
   margin: 0 auto;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  @include responsive(phone) {
+    width: 80%;
+  }
+  @include responsive(tab) {
+    width: 80%;
+  }
+  @include responsive(lap-desk) {
+    width: 90%;
+  }
 }
